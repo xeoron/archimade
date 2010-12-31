@@ -4,7 +4,8 @@
 	skeleton for multifile support
 	
 #### Description
-	Archimade is a simple archiving utility. Archimade is an open-source program. You can access its full functionality for free.
+	Archimade is a simple archiving utility. Archimade is an open-source program. 
+	You can access its full functionality for free.
 	
 		Supported compression formats:
 			- tar gziped
