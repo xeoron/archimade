@@ -228,6 +228,9 @@ NSString *const kArchimadeUserDefaultsActivateApplicationAnywayKey = @"NSUserDef
 		if ([[NSFileManager defaultManager] isVolumeFileAtPath:path]) {
 			flag = NO; break;
 		}
+		if (![[NSFileManager defaultManager] isDirectoryFileAtPath:path]) {
+			flag = NO; break;
+		}
 		[buffer addObject:path];
 		flag = YES;
 	}
@@ -269,6 +272,7 @@ NSString *const kArchimadeUserDefaultsActivateApplicationAnywayKey = @"NSUserDef
 
 - (void)startingOperationFailed
 {
+	[self shakeWindow:self.window];
 	if ([[[NSUserDefaults standardUserDefaults]  objectForKey:kArchimadeUserDefaultsSpeakableAlertKey] boolValue]) {
 		if (![[self.soundCollection objectAtIndex:2] isPlaying] && ![[self.soundCollection objectAtIndex:3] isPlaying]) {
 			[[self.soundCollection objectAtIndex:2] play];
@@ -278,8 +282,6 @@ NSString *const kArchimadeUserDefaultsActivateApplicationAnywayKey = @"NSUserDef
 			[[self.soundCollection objectAtIndex:1] play];
 		}
 	}
-	
-	[self shakeWindow:self.window];
 }
 
 - (void)openPanelDidEnd:(NSOpenPanel *)panel returnCode:(NSInteger)returnCode  contextInfo:(void  *)contextInfo

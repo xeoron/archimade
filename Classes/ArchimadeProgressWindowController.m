@@ -137,7 +137,7 @@ NS_INLINE void APWC_sleepForAnimation(useconds_t microseconds)
 		root = [[NSFileManager defaultManager] directoryNameAtPath:file];
 		src = [[NSFileManager defaultManager] baseNameAtPath:file];
 	
-		NSLog(@" %@ %@", src);
+		//NSLog(@" %@ %@", src);
 		
 		onDesktop = [[NSUserDefaults standardUserDefaults] 
 			objectForKey:kArchimadeUserDefaultsArchiveAlwaysOnDesktopKey];
@@ -162,7 +162,7 @@ NS_INLINE void APWC_sleepForAnimation(useconds_t microseconds)
 			}
 		}
 		
-		NSLog(@" %@ %@", ar, [file stringByAppendingString:ext]);
+		//NSLog(@" %@ %@", ar, [file stringByAppendingString:ext]);
 		
 		overwrite = [[NSUserDefaults standardUserDefaults] 
 			objectForKey:kArchimadeUserDefaultsArchiveOverwriteKey];
@@ -220,7 +220,7 @@ NS_INLINE void APWC_sleepForAnimation(useconds_t microseconds)
 			}
 		}
 		
-		NSLog(@" %@", APWC_taskArguments);
+		//NSLog(@" %@", APWC_taskArguments);
 		
 		APWC_archivePath = ar;
 		APWC_timerRepeat = nil;

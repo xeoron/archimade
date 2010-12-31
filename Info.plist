@@ -21,7 +21,7 @@
 	<key>CFBundleIconFile</key>
 	<string>Archimade.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.github.${PRODUCT_NAME:identifier}</string>
+	<string>com.github.cucurbita.${PRODUCT_NAME:identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

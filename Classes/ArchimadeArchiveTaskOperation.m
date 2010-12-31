@@ -83,7 +83,7 @@ NSString *const kArchimadeTerminateTaskOperationNotificationName = @"ArchimadeTe
 	[AATOC_internalTask setLaunchPath:self.launchPath];
 	[AATOC_internalTask setArguments:AATOC_arguments];
 	
-	NSLog(@" %@" , AATOC_arguments);
+	//NSLog(@" %@" , AATOC_arguments);
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self 
 		selector:@selector(onEventData:) 

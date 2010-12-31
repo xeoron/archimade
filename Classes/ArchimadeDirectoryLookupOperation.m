@@ -33,8 +33,8 @@ NSString *const kArchimadeTerminateDirectoryLookupOperationNotificationName = @"
 	NSParameterAssert(nil != filenames);
 	//NSParameterAssert(0 != [filenames count]);
 	if ((self = [super init])) {
-		NSLog(@"-- %@ %p", filenames, filenames);
-		NSLog(@" %i",[filenames count]);
+		//NSLog(@"-- %@ %p", filenames, filenames);
+		//NSLog(@" %i",[filenames count]);
 		ADLO_several = [filenames count] > 1 ? YES : NO;
 		self.fileNames = filenames;
 	}
