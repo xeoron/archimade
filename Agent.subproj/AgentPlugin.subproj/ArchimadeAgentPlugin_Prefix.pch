@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ArchimadeAgentPlugin' target in the 'ArchimadeAgentPlugin' project.
+//
+
+#ifdef __OBJC__
+
+#endif

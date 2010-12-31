@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D51660C30F27A7E2005A1ABD /* ArchimadeFolder.png in Resources */ = {isa = PBXBuildFile; fileRef = D51660C20F27A7E2005A1ABD /* ArchimadeFolder.png */; };
+		D52AEFBC0ECE19B900375424 /* WrongDroppedFile.aiff in Resources */ = {isa = PBXBuildFile; fileRef = D52AEFBA0ECE19B900375424 /* WrongDroppedFile.aiff */; };
+		D53868FE10E433F100E0E6FB /* ArchimadeApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53868E510E433F100E0E6FB /* ArchimadeApplicationController.m */; };
+		D53868FF10E433F100E0E6FB /* ArchimadeArchiveTaskOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D53868E710E433F100E0E6FB /* ArchimadeArchiveTaskOperation.m */; };
+		D538690010E433F100E0E6FB /* ArchimadeDirectoryLookupOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D53868E910E433F100E0E6FB /* ArchimadeDirectoryLookupOperation.m */; };
+		D538690110E433F100E0E6FB /* ArchimadeDragAndDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = D53868EB10E433F100E0E6FB /* ArchimadeDragAndDropView.m */; };
+		D538690310E433F100E0E6FB /* ArchimadePreferenceAccessibilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53868EF10E433F100E0E6FB /* ArchimadePreferenceAccessibilityViewController.m */; };
+		D538690410E433F100E0E6FB /* ArchimadePreferenceAdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53868F110E433F100E0E6FB /* ArchimadePreferenceAdvancedViewController.m */; };
+		D538690510E433F100E0E6FB /* ArchimadePreferenceGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53868F310E433F100E0E6FB /* ArchimadePreferenceGeneralViewController.m */; };
+		D538690610E433F100E0E6FB /* ArchimadeProgressWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53868F510E433F100E0E6FB /* ArchimadeProgressWindowController.m */; };
+		D538690710E433F100E0E6FB /* AUPathUtilitiesAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = D53868F910E433F100E0E6FB /* AUPathUtilitiesAddition.m */; };
+		D538690810E433F100E0E6FB /* AUPreferencesMultiItems.m in Sources */ = {isa = PBXBuildFile; fileRef = D53868FB10E433F100E0E6FB /* AUPreferencesMultiItems.m */; };
+		D5390FA80EC20CF10045A5B5 /* ProgressWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5390FA60EC20CF10045A5B5 /* ProgressWindow.xib */; };
+		D53EE23C0EF44784003F8D41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53EE23A0EF44784003F8D41 /* MainMenu.xib */; };
+		D572EA890ECE12210012612F /* WrongPriviledges.aiff in Resources */ = {isa = PBXBuildFile; fileRef = D572EA870ECE12210012612F /* WrongPriviledges.aiff */; };
+		D58DA1270EDC710900F3C3AB /* PreferenceAdvancedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D58DA1250EDC710900F3C3AB /* PreferenceAdvancedView.xib */; };
+		D5903B010ED34F1200F7C2A4 /* UniversalAccessPref.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D5903B000ED34F1200F7C2A4 /* UniversalAccessPref.tiff */; };
+		D590916D0EC3D751006D8C44 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D590916C0EC3D751006D8C44 /* QuartzCore.framework */; };
+		D594E1AC10E583FC006254C9 /* AUFileManagerAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = D594E1AB10E583FC006254C9 /* AUFileManagerAddition.m */; };
+		D59C846F0ED4714D00F177D4 /* PreferenceAccessibilityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D59C846D0ED4714D00F177D4 /* PreferenceAccessibilityView.xib */; };
+		D59F5ABA0EBE69A00039B876 /* Archimade.icns in Resources */ = {isa = PBXBuildFile; fileRef = D59F5AB70EBE69A00039B876 /* Archimade.icns */; };
+		D5A79B0C0EC0B29D009F2A42 /* ArchimadeDragZone.png in Resources */ = {isa = PBXBuildFile; fileRef = D5A79B0B0EC0B29D009F2A42 /* ArchimadeDragZone.png */; };
+		D5F5DE6A0ED23603003359F3 /* PreferenceGeneralView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F5DE680ED23603003359F3 /* PreferenceGeneralView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Archimade_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Archimade_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Archimade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Archimade.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51660C20F27A7E2005A1ABD /* ArchimadeFolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ArchimadeFolder.png; path = Images/ArchimadeFolder.png; sourceTree = "<group>"; };
+		D52AEFBB0ECE19B900375424 /* English */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = English; path = English.lproj/WrongDroppedFile.aiff; sourceTree = "<group>"; };
+		D53868E410E433F100E0E6FB /* ArchimadeApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchimadeApplicationController.h; sourceTree = "<group>"; };
+		D53868E510E433F100E0E6FB /* ArchimadeApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchimadeApplicationController.m; sourceTree = "<group>"; };
+		D53868E610E433F100E0E6FB /* ArchimadeArchiveTaskOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchimadeArchiveTaskOperation.h; sourceTree = "<group>"; };
+		D53868E710E433F100E0E6FB /* ArchimadeArchiveTaskOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchimadeArchiveTaskOperation.m; sourceTree = "<group>"; };
+		D53868E810E433F100E0E6FB /* ArchimadeDirectoryLookupOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchimadeDirectoryLookupOperation.h; sourceTree = "<group>"; };
+		D53868E910E433F100E0E6FB /* ArchimadeDirectoryLookupOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchimadeDirectoryLookupOperation.m; sourceTree = "<group>"; };
+		D53868EA10E433F100E0E6FB /* ArchimadeDragAndDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchimadeDragAndDropView.h; sourceTree = "<group>"; };
+		D53868EB10E433F100E0E6FB /* ArchimadeDragAndDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchimadeDragAndDropView.m; sourceTree = "<group>"; };
+		D53868EE10E433F100E0E6FB /* ArchimadePreferenceAccessibilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchimadePreferenceAccessibilityViewController.h; sourceTree = "<group>"; };
+		D53868EF10E433F100E0E6FB /* ArchimadePreferenceAccessibilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchimadePreferenceAccessibilityViewController.m; sourceTree = "<group>"; };
+		D53868F010E433F100E0E6FB /* ArchimadePreferenceAdvancedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchimadePreferenceAdvancedViewController.h; sourceTree = "<group>"; };
+		D53868F110E433F100E0E6FB /* ArchimadePreferenceAdvancedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchimadePreferenceAdvancedViewController.m; sourceTree = "<group>"; };
+		D53868F210E433F100E0E6FB /* ArchimadePreferenceGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchimadePreferenceGeneralViewController.h; sourceTree = "<group>"; };
+		D53868F310E433F100E0E6FB /* ArchimadePreferenceGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchimadePreferenceGeneralViewController.m; sourceTree = "<group>"; };
+		D53868F410E433F100E0E6FB /* ArchimadeProgressWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchimadeProgressWindowController.h; sourceTree = "<group>"; };
+		D53868F510E433F100E0E6FB /* ArchimadeProgressWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchimadeProgressWindowController.m; sourceTree = "<group>"; };
+		D53868F710E433F100E0E6FB /* AUCommonGround.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUCommonGround.h; sourceTree = "<group>"; };
+		D53868F810E433F100E0E6FB /* AUPathUtilitiesAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUPathUtilitiesAddition.h; sourceTree = "<group>"; };
+		D53868F910E433F100E0E6FB /* AUPathUtilitiesAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUPathUtilitiesAddition.m; sourceTree = "<group>"; };
+		D53868FA10E433F100E0E6FB /* AUPreferencesMultiItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUPreferencesMultiItems.h; sourceTree = "<group>"; };
+		D53868FB10E433F100E0E6FB /* AUPreferencesMultiItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUPreferencesMultiItems.m; sourceTree = "<group>"; };
+		D53868FC10E433F100E0E6FB /* AUSingletonizeClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUSingletonizeClass.h; sourceTree = "<group>"; };
+		D5390FA70EC20CF10045A5B5 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ProgressWindow.xib; sourceTree = "<group>"; };
+		D53EE23B0EF44784003F8D41 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D572EA880ECE12210012612F /* English */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = English; path = English.lproj/WrongPriviledges.aiff; sourceTree = "<group>"; };
+		D58DA1260EDC710900F3C3AB /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PreferenceAdvancedView.xib; sourceTree = "<group>"; };
+		D5903B000ED34F1200F7C2A4 /* UniversalAccessPref.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = UniversalAccessPref.tiff; path = Images/UniversalAccessPref.tiff; sourceTree = "<group>"; };
+		D590916C0EC3D751006D8C44 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		D594E1AA10E583FC006254C9 /* AUFileManagerAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUFileManagerAddition.h; sourceTree = "<group>"; };
+		D594E1AB10E583FC006254C9 /* AUFileManagerAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUFileManagerAddition.m; sourceTree = "<group>"; };
+		D59C846E0ED4714D00F177D4 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PreferenceAccessibilityView.xib; sourceTree = "<group>"; };
+		D59F5AB70EBE69A00039B876 /* Archimade.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Archimade.icns; path = Images/Archimade.icns; sourceTree = "<group>"; };
+		D5A79B0B0EC0B29D009F2A42 /* ArchimadeDragZone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ArchimadeDragZone.png; path = Images/ArchimadeDragZone.png; sourceTree = "<group>"; };
+		D5F5DE690ED23603003359F3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PreferenceGeneralView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				D590916D0EC3D751006D8C44 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				D590916C0EC3D751006D8C44 /* QuartzCore.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Archimade.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Archimade */ = {
+			isa = PBXGroup;
+			children = (
+				D53868E310E433F100E0E6FB /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Archimade;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Archimade_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D59F5AB70EBE69A00039B876 /* Archimade.icns */,
+				D51660C20F27A7E2005A1ABD /* ArchimadeFolder.png */,
+				D5A79B0B0EC0B29D009F2A42 /* ArchimadeDragZone.png */,
+				D5903B000ED34F1200F7C2A4 /* UniversalAccessPref.tiff */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				D52AEFBA0ECE19B900375424 /* WrongDroppedFile.aiff */,
+				D572EA870ECE12210012612F /* WrongPriviledges.aiff */,
+				D53EE23A0EF44784003F8D41 /* MainMenu.xib */,
+				D5390FA60EC20CF10045A5B5 /* ProgressWindow.xib */,
+				D5F5DE680ED23603003359F3 /* PreferenceGeneralView.xib */,
+				D59C846D0ED4714D00F177D4 /* PreferenceAccessibilityView.xib */,
+				D58DA1250EDC710900F3C3AB /* PreferenceAdvancedView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D53868E310E433F100E0E6FB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D53868E410E433F100E0E6FB /* ArchimadeApplicationController.h */,
+				D53868E510E433F100E0E6FB /* ArchimadeApplicationController.m */,
+				D53868E610E433F100E0E6FB /* ArchimadeArchiveTaskOperation.h */,
+				D53868E710E433F100E0E6FB /* ArchimadeArchiveTaskOperation.m */,
+				D53868E810E433F100E0E6FB /* ArchimadeDirectoryLookupOperation.h */,
+				D53868E910E433F100E0E6FB /* ArchimadeDirectoryLookupOperation.m */,
+				D53868EA10E433F100E0E6FB /* ArchimadeDragAndDropView.h */,
+				D53868EB10E433F100E0E6FB /* ArchimadeDragAndDropView.m */,
+				D53868EE10E433F100E0E6FB /* ArchimadePreferenceAccessibilityViewController.h */,
+				D53868EF10E433F100E0E6FB /* ArchimadePreferenceAccessibilityViewController.m */,
+				D53868F010E433F100E0E6FB /* ArchimadePreferenceAdvancedViewController.h */,
+				D53868F110E433F100E0E6FB /* ArchimadePreferenceAdvancedViewController.m */,
+				D53868F210E433F100E0E6FB /* ArchimadePreferenceGeneralViewController.h */,
+				D53868F310E433F100E0E6FB /* ArchimadePreferenceGeneralViewController.m */,
+				D53868F410E433F100E0E6FB /* ArchimadeProgressWindowController.h */,
+				D53868F510E433F100E0E6FB /* ArchimadeProgressWindowController.m */,
+				D53868F610E433F100E0E6FB /* External */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D53868F610E433F100E0E6FB /* External */ = {
+			isa = PBXGroup;
+			children = (
+				D53868F710E433F100E0E6FB /* AUCommonGround.h */,
+				D594E1AA10E583FC006254C9 /* AUFileManagerAddition.h */,
+				D594E1AB10E583FC006254C9 /* AUFileManagerAddition.m */,
+				D53868F810E433F100E0E6FB /* AUPathUtilitiesAddition.h */,
+				D53868F910E433F100E0E6FB /* AUPathUtilitiesAddition.m */,
+				D53868FA10E433F100E0E6FB /* AUPreferencesMultiItems.h */,
+				D53868FB10E433F100E0E6FB /* AUPreferencesMultiItems.m */,
+				D53868FC10E433F100E0E6FB /* AUSingletonizeClass.h */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Archimade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Archimade" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				D541DBB50F4B664800A7D73E /* Code Signing */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Archimade;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Archimade;
+			productReference = 8D1107320486CEB800E47090 /* Archimade.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Archimade" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Archimade */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Archimade */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				D59F5ABA0EBE69A00039B876 /* Archimade.icns in Resources */,
+				D5A79B0C0EC0B29D009F2A42 /* ArchimadeDragZone.png in Resources */,
+				D5390FA80EC20CF10045A5B5 /* ProgressWindow.xib in Resources */,
+				D572EA890ECE12210012612F /* WrongPriviledges.aiff in Resources */,
+				D52AEFBC0ECE19B900375424 /* WrongDroppedFile.aiff in Resources */,
+				D5F5DE6A0ED23603003359F3 /* PreferenceGeneralView.xib in Resources */,
+				D5903B010ED34F1200F7C2A4 /* UniversalAccessPref.tiff in Resources */,
+				D59C846F0ED4714D00F177D4 /* PreferenceAccessibilityView.xib in Resources */,
+				D58DA1270EDC710900F3C3AB /* PreferenceAdvancedView.xib in Resources */,
+				D53EE23C0EF44784003F8D41 /* MainMenu.xib in Resources */,
+				D51660C30F27A7E2005A1ABD /* ArchimadeFolder.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D541DBB50F4B664800A7D73E /* Code Signing */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Code Signing";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#comment out or build with your own certificat\n\nif [ $CONFIGURATION != \"Debug\" ]; then\n\tTARGET_NAME_IDENTITY=Cucurbita\n\tcd \"${TARGET_BUILD_DIR}\" && codesign -f -s \"${TARGET_NAME_IDENTITY}\" \"${TARGET_NAME}.app\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				D53868FE10E433F100E0E6FB /* ArchimadeApplicationController.m in Sources */,
+				D53868FF10E433F100E0E6FB /* ArchimadeArchiveTaskOperation.m in Sources */,
+				D538690010E433F100E0E6FB /* ArchimadeDirectoryLookupOperation.m in Sources */,
+				D538690110E433F100E0E6FB /* ArchimadeDragAndDropView.m in Sources */,
+				D538690310E433F100E0E6FB /* ArchimadePreferenceAccessibilityViewController.m in Sources */,
+				D538690410E433F100E0E6FB /* ArchimadePreferenceAdvancedViewController.m in Sources */,
+				D538690510E433F100E0E6FB /* ArchimadePreferenceGeneralViewController.m in Sources */,
+				D538690610E433F100E0E6FB /* ArchimadeProgressWindowController.m in Sources */,
+				D538690710E433F100E0E6FB /* AUPathUtilitiesAddition.m in Sources */,
+				D538690810E433F100E0E6FB /* AUPreferencesMultiItems.m in Sources */,
+				D594E1AC10E583FC006254C9 /* AUFileManagerAddition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D52AEFBA0ECE19B900375424 /* WrongDroppedFile.aiff */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D52AEFBB0ECE19B900375424 /* English */,
+			);
+			name = WrongDroppedFile.aiff;
+			sourceTree = "<group>";
+		};
+		D5390FA60EC20CF10045A5B5 /* ProgressWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5390FA70EC20CF10045A5B5 /* English */,
+			);
+			name = ProgressWindow.xib;
+			sourceTree = "<group>";
+		};
+		D53EE23A0EF44784003F8D41 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D53EE23B0EF44784003F8D41 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D572EA870ECE12210012612F /* WrongPriviledges.aiff */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D572EA880ECE12210012612F /* English */,
+			);
+			name = WrongPriviledges.aiff;
+			sourceTree = "<group>";
+		};
+		D58DA1250EDC710900F3C3AB /* PreferenceAdvancedView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D58DA1260EDC710900F3C3AB /* English */,
+			);
+			name = PreferenceAdvancedView.xib;
+			sourceTree = "<group>";
+		};
+		D59C846D0ED4714D00F177D4 /* PreferenceAccessibilityView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D59C846E0ED4714D00F177D4 /* English */,
+			);
+			name = PreferenceAccessibilityView.xib;
+			sourceTree = "<group>";
+		};
+		D5F5DE680ED23603003359F3 /* PreferenceGeneralView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5F5DE690ED23603003359F3 /* English */,
+			);
+			name = PreferenceGeneralView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Archimade_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Archimade;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Archimade_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Archimade;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Archimade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Archimade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

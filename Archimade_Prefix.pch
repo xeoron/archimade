@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Archimade' target in the 'Archimade' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

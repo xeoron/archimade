@@ -1,0 +1,19 @@
+/* Localized keys */
+
+"Copy" = "Copy";
+"Accessibility" = "Accessibility";
+"Advanced" = "Advanced";
+"Archiving %llu items." = "Archiving %llu items.";
+"Archiving %llu item." = "Archiving %llu item.";
+"Cancelling" = "Cancelling";
+"General" = "General";
+/* "Preparing" = "Preparing"; */
+"Preparing data for archiving" = "Preparing data for archiving";
+"Preparing to archive %llu items." = "Preparing to archive %llu items.";
+"Preparing to archive %llu item." = "Preparing to archive %llu item.";
+"Processing \"%@\"" = "Processing \"%@\"";
+"Reading data" = "Reading data";
+"The Operation cannot be completed because you do not have sufficient privileges." = "The Operation cannot be completed because you do not have sufficient privileges.";
+"The Operation cannot be completed because this process already exists." = "The Operation cannot be completed because this process already exists.";
+
+/* EOF */
