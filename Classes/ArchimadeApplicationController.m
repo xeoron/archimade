@@ -56,7 +56,8 @@ NSString *const kArchimadeUserDefaultsActivateApplicationAnywayKey = @"NSUserDef
 - (void)awakeFromNib
 {
 	[self initUserDefaults];
-		
+	[[[self archiveTypeList] cell] setImage:[NSImage imageNamed:@"ArchimadePopup"]];
+	
 	self.soundCollection = [[NSArray alloc] initWithObjects:
 		[NSSound soundNamed:@"Pop"],
 		[NSSound soundNamed:@"Basso"],

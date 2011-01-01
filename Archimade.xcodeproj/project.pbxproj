@@ -11,6 +11,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		D51660C30F27A7E2005A1ABD /* ArchimadeFolder.png in Resources */ = {isa = PBXBuildFile; fileRef = D51660C20F27A7E2005A1ABD /* ArchimadeFolder.png */; };
+		D51DE2FE12CEB5A30003CD83 /* ArchimadePopup.png in Resources */ = {isa = PBXBuildFile; fileRef = D51DE2FD12CEB5A30003CD83 /* ArchimadePopup.png */; };
 		D52AEFBC0ECE19B900375424 /* WrongDroppedFile.aiff in Resources */ = {isa = PBXBuildFile; fileRef = D52AEFBA0ECE19B900375424 /* WrongDroppedFile.aiff */; };
 		D53868FE10E433F100E0E6FB /* ArchimadeApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D53868E510E433F100E0E6FB /* ArchimadeApplicationController.m */; };
 		D53868FF10E433F100E0E6FB /* ArchimadeArchiveTaskOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D53868E710E433F100E0E6FB /* ArchimadeArchiveTaskOperation.m */; };
@@ -33,6 +34,7 @@
 		D59F5ABA0EBE69A00039B876 /* Archimade.icns in Resources */ = {isa = PBXBuildFile; fileRef = D59F5AB70EBE69A00039B876 /* Archimade.icns */; };
 		D5A79B0C0EC0B29D009F2A42 /* ArchimadeDragZone.png in Resources */ = {isa = PBXBuildFile; fileRef = D5A79B0B0EC0B29D009F2A42 /* ArchimadeDragZone.png */; };
 		D5F5DE6A0ED23603003359F3 /* PreferenceGeneralView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F5DE680ED23603003359F3 /* PreferenceGeneralView.xib */; };
+		D5F850FF12CFA9E700C373D5 /* ArchimadePopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F850FE12CFA9E700C373D5 /* ArchimadePopUpButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,7 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Archimade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Archimade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51660C20F27A7E2005A1ABD /* ArchimadeFolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ArchimadeFolder.png; path = Images/ArchimadeFolder.png; sourceTree = "<group>"; };
+		D51DE2FD12CEB5A30003CD83 /* ArchimadePopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ArchimadePopup.png; path = Images/ArchimadePopup.png; sourceTree = "<group>"; };
 		D52AEFBB0ECE19B900375424 /* English */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = English; path = English.lproj/WrongDroppedFile.aiff; sourceTree = "<group>"; };
 		D53868E410E433F100E0E6FB /* ArchimadeApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchimadeApplicationController.h; sourceTree = "<group>"; };
 		D53868E510E433F100E0E6FB /* ArchimadeApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchimadeApplicationController.m; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 		D59F5AB70EBE69A00039B876 /* Archimade.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Archimade.icns; path = Images/Archimade.icns; sourceTree = "<group>"; };
 		D5A79B0B0EC0B29D009F2A42 /* ArchimadeDragZone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ArchimadeDragZone.png; path = Images/ArchimadeDragZone.png; sourceTree = "<group>"; };
 		D5F5DE690ED23603003359F3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PreferenceGeneralView.xib; sourceTree = "<group>"; };
+		D5F850FD12CFA9E700C373D5 /* ArchimadePopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchimadePopUpButton.h; sourceTree = "<group>"; };
+		D5F850FE12CFA9E700C373D5 /* ArchimadePopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchimadePopUpButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +152,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D51DE2FD12CEB5A30003CD83 /* ArchimadePopup.png */,
 				D59F5AB70EBE69A00039B876 /* Archimade.icns */,
 				D51660C20F27A7E2005A1ABD /* ArchimadeFolder.png */,
 				D5A79B0B0EC0B29D009F2A42 /* ArchimadeDragZone.png */,
@@ -192,6 +198,8 @@
 				D53868F310E433F100E0E6FB /* ArchimadePreferenceGeneralViewController.m */,
 				D53868F410E433F100E0E6FB /* ArchimadeProgressWindowController.h */,
 				D53868F510E433F100E0E6FB /* ArchimadeProgressWindowController.m */,
+				D5F850FD12CFA9E700C373D5 /* ArchimadePopUpButton.h */,
+				D5F850FE12CFA9E700C373D5 /* ArchimadePopUpButton.m */,
 				D53868F610E433F100E0E6FB /* External */,
 			);
 			path = Classes;
@@ -268,6 +276,7 @@
 				D58DA1270EDC710900F3C3AB /* PreferenceAdvancedView.xib in Resources */,
 				D53EE23C0EF44784003F8D41 /* MainMenu.xib in Resources */,
 				D51660C30F27A7E2005A1ABD /* ArchimadeFolder.png in Resources */,
+				D51DE2FE12CEB5A30003CD83 /* ArchimadePopup.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +316,7 @@
 				D538690710E433F100E0E6FB /* AUPathUtilitiesAddition.m in Sources */,
 				D538690810E433F100E0E6FB /* AUPreferencesMultiItems.m in Sources */,
 				D594E1AC10E583FC006254C9 /* AUFileManagerAddition.m in Sources */,
+				D5F850FF12CFA9E700C373D5 /* ArchimadePopUpButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
