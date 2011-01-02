@@ -380,13 +380,17 @@ NSString *const kArchimadeUserDefaultsActivateApplicationAnywayKey = @"NSUserDef
 
 - (void)archiveFileQueueRemove:(NSString *)archiveFilePath
 {
-	[self.archiveFileQueue removeObject:archiveFilePath];
+	if ([self.archiveFileQueue count] > 0) {
+		[self.archiveFileQueue removeObject:archiveFilePath];
+	}
 }
 
 - (NSNumber *)archiveFileQueueExists:(NSString *)archiveFilePath
 {
-	BOOL ret = NSNotFound == [self.archiveFileQueue indexOfObject:archiveFilePath] ? NO : YES;
-	
+	BOOL ret = NO;
+	if ([self.archiveFileQueue count] > 0) {
+		ret = (NSNotFound == [self.archiveFileQueue indexOfObject:archiveFilePath]) ? NO : YES;
+	}
 	return [NSNumber numberWithBool:ret];
 }
 

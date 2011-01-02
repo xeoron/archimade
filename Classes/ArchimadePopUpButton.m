@@ -17,12 +17,12 @@
 		APUB_bgimage = [NSImage imageNamed:@"ArchimadePopup"];
 		APUB_fontattr = [[NSMutableDictionary alloc] init];
 		[APUB_fontattr setValue:[NSFont systemFontOfSize:11.0] forKey:NSFontAttributeName];
-		[APUB_fontattr setValue:[NSColor blackColor] forKey:NSForegroundColorAttributeName];
 		NSShadow *shadow = [[[NSShadow alloc] init] autorelease];
 		[shadow setShadowOffset:NSMakeSize(0, -1)];
 		[shadow setShadowBlurRadius:0.1];
 		[shadow setShadowColor:[[NSColor whiteColor] colorWithAlphaComponent:0.6]];
 		[APUB_fontattr setValue:shadow forKey:NSShadowAttributeName];
+		[APUB_fontattr setValue:[NSColor blackColor] forKey:NSForegroundColorAttributeName];
 #if (MAC_OS_X_VERSION_MAX_ALLOWED < 1060)
 		[APUB_bgimage setFlipped:YES];
 #endif

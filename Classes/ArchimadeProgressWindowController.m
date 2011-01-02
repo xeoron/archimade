@@ -164,14 +164,11 @@ NS_INLINE void APWC_sleepForAnimation(useconds_t microseconds)
 		
 		//NSLog(@" %@ %@", ar, [file stringByAppendingString:ext]);
 		
-		overwrite = [[NSUserDefaults standardUserDefaults] 
-			objectForKey:kArchimadeUserDefaultsArchiveOverwriteKey];
-		
+		overwrite = [[NSUserDefaults standardUserDefaults] objectForKey:kArchimadeUserDefaultsArchiveOverwriteKey];
 		if ([[NSFileManager defaultManager] isWritableFileAtPath:ar] && [overwrite boolValue]) {
 			renameFlag = [[APWC_rootController performSelector:@selector(archiveFileQueueExists:) withObject:ar] boolValue];
 		}
-		
-		if(renameFlag && APWC_Flags._multiItems) {
+		if(renameFlag) {
 			if ([[NSFileManager defaultManager] fileExistsAtPath:ar] ||
 				[[APWC_rootController performSelector:@selector(archiveFileQueueExists:) withObject:ar] boolValue]) {
 				while (true) {
@@ -198,8 +195,7 @@ NS_INLINE void APWC_sleepForAnimation(useconds_t microseconds)
 					}
 				}
 			}
-		}
-		
+		}		
 		[APWC_rootController performSelector:@selector(archiveFileQueueAdd:) withObject:ar];
 			
 		if (4 != [self.archiveType integerValue]) { // !zip
