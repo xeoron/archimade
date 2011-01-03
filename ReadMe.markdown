@@ -1,7 +1,7 @@
 <img src="https://github.com/cucurbita/archimade/raw/master/ReadMe/screenshot.png" />
 
-#### Version 1.0.51, Current Release
-	skeleton for multifile support
+#### Version 1.0.52, Current Release
+	Changed archive type PopUp's style to in-house style. 
 	
 #### Description
 	Archimade is a simple archiving utility. Archimade is an open-source program. 
