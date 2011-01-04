@@ -14,7 +14,7 @@
 - (void)dealloc
 {
 	if (APUB_bgimage != nil) {
-		[APUB_fontattr release];
+		[APUB_bgimage release];
 	}
 	if (APUB_fontattr != nil) {
 		[APUB_fontattr release];
