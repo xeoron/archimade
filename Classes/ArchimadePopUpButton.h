@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @interface ArchimadePopUpButton : NSPopUpButton {
 
 @private
@@ -18,3 +17,5 @@
 }
 
 @end
+
+/* EOF */
