@@ -5,7 +5,13 @@
 	
 #### Description
 	Archimade is a simple archiving utility. Archimade is an open-source program. 
-	You can access its full functionality for free.
+	You can access its full functionality for free. 
+	
+		Notable:
+			- Safe Read/Write/Memory for filesystem access
+			- Won't freeze (fully multi task)
+			- Won't freeze on cancel task (immediate)
+			- Won't use too much memory and freeze your computer (queueing when needed)
 	
 		Supported compression formats:
 			- tar gziped
