@@ -42,6 +42,9 @@ NSString *const kArchimadeDidReceiveWrongPriviledgesAlertNotificationName = @"Ar
 #include <stdlib.h>
 #include <unistd.h>
 
+#pragma mark -
+#pragma mark Private Function
+
 #define __APWC_SLEEP_FOR_ANIMATION__
 
 NS_INLINE void APWC_sleepForAnimation(useconds_t microseconds)
@@ -50,6 +53,9 @@ NS_INLINE void APWC_sleepForAnimation(useconds_t microseconds)
 	usleep(microseconds); // blocking
 #endif
 }
+
+#pragma mark -
+#pragma mark Memory Management
 
 - (void)dealloc
 {
@@ -71,6 +77,9 @@ NS_INLINE void APWC_sleepForAnimation(useconds_t microseconds)
 
 	[super dealloc];
 }
+
+#pragma mark -
+#pragma mark Instance Constructor
 
 - (id)initWithRootControllerAndOptions:(id)controller options:(NSArray *)options
 {
@@ -246,13 +255,17 @@ NS_INLINE void APWC_sleepForAnimation(useconds_t microseconds)
 	return self;
 }
 
+#pragma mark -
+#pragma mark Window Lifecycle
+
 - (void)windowDidLoad
 {
 	[progressIndicator setUsesThreadedAnimation:YES];
 	[progressIndicator startAnimation:self];
 }
 
-#pragma mark lookup operation
+#pragma mark -
+#pragma mark Lookup Operation
 
 - (void)lookupOperationBegin:(NSTimer *)timer
 {
@@ -318,10 +331,12 @@ NS_INLINE void APWC_sleepForAnimation(useconds_t microseconds)
 	}
 
 	if ([[aNotification name] isEqualToString:kArchimadeResultDirectoryLookupOperationNotificationName]) {
-		APWC_totalSize = [[[aNotification userInfo] objectForKey:
-			kArchimadeDirectoryLookupOperationCurrentSizeKey] unsignedLongLongValue];
-		APWC_countItem = [[[aNotification userInfo] objectForKey:
-			kArchimadeDirectoryLookupOperationCurrentCountKey] unsignedLongLongValue];
+		@synchronized (self) {
+			APWC_totalSize = [[[aNotification userInfo] objectForKey:
+				kArchimadeDirectoryLookupOperationCurrentSizeKey] unsignedLongLongValue];
+			APWC_countItem = [[[aNotification userInfo] objectForKey:
+				kArchimadeDirectoryLookupOperationCurrentCountKey] unsignedLongLongValue];
+		}
 	}
 	
 	if ([[aNotification name] isEqualToString:kArchimadeTerminateDirectoryLookupOperationNotificationName]) {
@@ -415,7 +430,8 @@ NS_INLINE void APWC_sleepForAnimation(useconds_t microseconds)
 		target: self selector:@selector(archiveTaskOperationBegin:) userInfo:nil repeats:NO];
 }
 
-#pragma mark archive operation
+#pragma mark -
+#pragma mark Archive Operation
 
 - (void)archiveTaskOperationBegin:(NSTimer *)timer
 {
@@ -606,7 +622,7 @@ NS_INLINE void APWC_sleepForAnimation(useconds_t microseconds)
 		[APWC_archiveTaskOperation release];
 		APWC_archiveTaskOperation = nil;
 		
-		/* TODO: unexpected error */
+/* TODO: unexpected error */
 		[self close];
 	
 		[[NSNotificationCenter defaultCenter] 
@@ -670,7 +686,8 @@ NS_INLINE void APWC_sleepForAnimation(useconds_t microseconds)
 		postNotificationName:kArchimadeTerminateProgressOperationNotificationName object:self];	
 }
 
-#pragma mark controller
+#pragma mark -
+#pragma mark Action Controller
 
 - (void)startOperation
 {
